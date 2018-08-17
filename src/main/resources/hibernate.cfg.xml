@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="connection.url">jdbc:mysql://localhost:3306/shoes_world</property>
+        <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+        <mapping class="com.shoesworld.models.AdminEntity"/>
+        <mapping class="com.shoesworld.models.AdminLogEntity"/>
+        <mapping class="com.shoesworld.models.AttributeEntity"/>
+        <mapping class="com.shoesworld.models.AttributeGroupEntity"/>
+        <mapping class="com.shoesworld.models.BrandEntity"/>
+        <mapping class="com.shoesworld.models.CategoryEntity"/>
+        <mapping class="com.shoesworld.models.CustomerEntity"/>
+        <mapping class="com.shoesworld.models.ImageEntity"/>
+        <mapping class="com.shoesworld.models.OrderEntity"/>
+        <mapping class="com.shoesworld.models.OrderDetailEntity"/>
+        <mapping class="com.shoesworld.models.OrderGuestEntity"/>
+        <mapping class="com.shoesworld.models.ProductEntity"/>
+        <mapping class="com.shoesworld.models.ReviewEntity"/>
+        <mapping class="com.shoesworld.models.RoleEntity"/>
+        <mapping class="com.shoesworld.models.SocialAccountEntity"/>
+        <mapping class="com.shoesworld.models.StockEntity"/>
+        <mapping class="com.shoesworld.models.WishlistEntity"/>
+        <mapping class="com.shoesworld.CategoryEntity123"/>
+
+        <!-- DB schema will be updated if needed -->
+        <!-- <property name="hbm2ddl.auto">update</property> -->
+    </session-factory>
+</hibernate-configuration>
